@@ -1,0 +1,8 @@
+# Supermarket List
+
+- Apples
+- Bananas
+- Oranges
+- Grapes
+- Strawberries
+- Pineapple

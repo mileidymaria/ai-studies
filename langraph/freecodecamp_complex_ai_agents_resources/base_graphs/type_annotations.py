@@ -1,4 +1,4 @@
-from typing import TypedDict, Union, Optional, Any
+from typing import TypedDict, Union, Optional, Any, Annotated
 
 # Normal Dictionary: Does not check if the data is the correct type or structure
 movie = {
@@ -34,3 +34,10 @@ def print_value(value: Any):
 # Lambda Function: shortcut to write small functions
 square = lambda x: x*x
 squares = list(map(lambda num: num * num, [1,2,3,6,5,4]))
+
+# Annotated = Provides additional context without affecting the type itself, metadata
+class Person(TypedDict):
+    email : Annotated[str, "This has to be a valid email format!"]
+
+# Sequence - To automatically handle the state updates for sequences such as by adding new
+# messages to a chat history, ordered collection.
