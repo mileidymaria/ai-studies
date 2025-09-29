@@ -6,17 +6,23 @@ class AgentState(TypedDict):
     age: int
     final: str
 
-def say_hi(state: AgentState) -> AgentState:
+class OutputState(TypedDict):
+    final: str
+class PrivateAgentState(TypedDict):
+    messages: str
+
+def say_hi(state: AgentState) -> OutputState:
     """This node says hi to the user."""
     state["final"] = f"Hi, {state['name']}!"
-    return state
+    return {"final": "Hey, that's final"}
 
-def say_age(state: AgentState) -> AgentState:
+def say_age(state: AgentState) -> PrivateAgentState:
     """This says user age"""
-    state["final"] = f"{state['final']} You are {str(state['age'])} years old."
+    state["message"] = "Private test!"
+    print(state)
     return state
 
-graph = StateGraph(AgentState)
+graph = StateGraph(AgentState, input=AgentState, output=OutputState)
 graph.add_node("say_hi", say_hi)
 graph.add_node("say_age", say_age)
 graph.set_entry_point("say_hi")
@@ -32,4 +38,5 @@ result = app.invoke({
     "name": "Mileidy",
     "age": 25
 })
-print(result["final"])
+print(result)
+print(type(result))

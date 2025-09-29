@@ -1,0 +1,8 @@
+python-dotenv
+matplotlib
+pydantic
+pyautogen
+autogen-agentchat
+autogen-ext[openai]
+langchain_core
+rich

@@ -1,0 +1,24 @@
+# List of Red Fruits
+
+1. Apple
+2. Cherry
+3. Strawberry
+4. Raspberry
+5. Pomegranate
+6. Watermelon
+7. Cranberry
+8. Tomato
+9. Red Grapes
+10. Blood Orange
+11. Red Pear
+12. Ruby Red Grapefruit
+13. Red Plum
+14. Red Currant
+15. Dragon Fruit
+16. Red Banana
+17. Red Papaya
+
+# List of Green Fruits
+
+1. Kiwi
+2. Green Apple

@@ -3,3 +3,5 @@ langgraph
 matplotlib
 langchain
 langchain_openai
+pydantic
+langgraph-checkpoint-sqlite

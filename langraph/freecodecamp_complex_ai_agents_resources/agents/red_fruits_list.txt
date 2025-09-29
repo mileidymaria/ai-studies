@@ -1,0 +1,9 @@
+# List of Red Fruits
+
+1. Apple
+2. Cherry
+3. Strawberry
+4. Raspberry
+5. Pomegranate
+6. Watermelon
+7. Cranberry
