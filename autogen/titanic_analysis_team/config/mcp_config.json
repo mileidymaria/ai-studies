@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "sqlite": {
+      "command": "mcp-server-sqlite",
+      "args": ["--db-path", "state_db/titanic.db"],
+      "env": {
+        "MCP_SQLITE_DB_PATH": "state_db/titanic.db"
+      }
+    },
+    "wikipedia": {
+      "command": "wikipedia-mcp",
+      "args": []
+    }
+  }
+}
